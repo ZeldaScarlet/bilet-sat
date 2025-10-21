@@ -1,0 +1,38 @@
+.mainblue {
+  background: linear-gradient(90deg, #191D54 0%, #5B2C79 100%);
+  color: white !important;
+}
+
+.mainblue .nav-link {
+  color: #F05281 !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.pink {
+  background-color: #F05281;
+}
+
+.pink-text {
+  color:  #F05281;
+}
+
+.gray {
+  background-color: #86ABB2;
+}
+
+.purple {
+  background-color: #5B2C79;
+}
+
+.purple-text {
+  color: #5B2C79;
+}
+
+.gradient-custom {
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #86ABB2, #F05281);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #86ABB2, #F05281)
+}

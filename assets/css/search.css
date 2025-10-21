@@ -1,0 +1,62 @@
+
+    .seat-map-container {
+        width: 300px; /* Otobüs haritasının sabit genişliği */
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .bus-front {
+        border-bottom: 2px solid #555;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #555;
+    }
+    .bus-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      align-items: center;
+    }
+    .seat-group {
+      display: flex;
+      gap: 5px; /* Koltuklar arasındaki boşluk */
+    }
+    .aisle-space {
+      width: 40px; /* Koridor genişliği */
+    }
+    .door-space {
+        height: 40px;
+    }
+    .seat {
+      width: 35px;
+      height: 35px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .seat.booked {
+    background-color: #ffc107 !important;
+    color: #333;
+    cursor: not-allowed;
+    border-color: #e0a800;
+}
+    .seat.selected { 
+        background-color: #b6eabf; 
+        border-color: #4CAF50;
+        color: #1c521c;
+    }
+    .seat:hover:not(.booked-male):not(.booked-female):not(.selected) {
+      background-color: #e8f5e9;
+    }
