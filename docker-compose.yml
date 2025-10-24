@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: bilet_rezervasyon_app
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./database.sqlite:/var/www/html/database.sqlite
